@@ -1,8 +1,9 @@
 //
 //  Server.c
-//  Alfie Cockell Gwinnett & Ingan121
+//  Heavily simplified version of iDownload
+//  All credits go to Linus Henze
 //
-//  Heavily simplified version of iDownload by Linus Henze
+//  Modified by Alfie Cockell Gwinnett & Ingan121
 //
 
 #include <stdio.h>
