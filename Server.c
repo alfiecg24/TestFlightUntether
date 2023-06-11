@@ -1,6 +1,6 @@
 //
 //  Server.c
-//  Alfie Cockell Gwinnett
+//  Alfie Cockell Gwinnett & Ingan121
 //
 //  Heavily simplified version of iDownload by Linus Henze
 //
