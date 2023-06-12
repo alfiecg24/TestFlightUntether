@@ -17,6 +17,5 @@ The original repository has support for full disk access using MacDirtyCow or th
 When the device boots, it runs the `TestFlightServiceExtension` binary inside the `TestFlight` bundle, which loads the `TestFlightServices` framework. This framework does not appear to be checked properly, allowing us to replace it with our own dynamic library. This library is loaded into the `TestFlightServiceExtension` process, which is then used to launch the shell server.
 
 ## Limitations
-- There is, as of now, no way to install this without the original bundle ID
+- There is, and likely will remain, no way to install this without the original bundle ID
 - The shell server is not very useful without additional exploits
-- The server process seems to be killed a few minutes after boot, the cause is unknown
