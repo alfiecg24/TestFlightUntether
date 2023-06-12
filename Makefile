@@ -32,6 +32,7 @@ all: $(SOURCES)
 	@$(COMPILER) $(XCODE_SDK) $(SOURCES) $(XCODE_FLAGS) -o $(OUTPUT)
 	@unzip -q $(IPA_NAME)
 	@mv $(OUTPUT) Payload/TestFlight.app/Frameworks/TestFlightServices.framework/TestFlightServices
+	@/usr/libexec/PlistBuddy -c "Set :NSExtension:ASDTestFlightServiceExtensionServiceTime -1" Payload/TestFlight.app/PlugIns/TestFlightServiceExtension.appex/Info.plist
 	@tar -czf $(OUTPUT_IPA) Payload
 	@rm -rf Payload
 	@echo "Build output at $(OUTPUT_IPA)"
