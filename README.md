@@ -1,6 +1,6 @@
 # TestFlightUntether
 
-This is a heavily simplified version of the [FSUntether](https://github.com/Ingan121/FSUntether) project. It is a (currently-0day) exploit for iOS 15.0 - 17.0DB1 that launches a basic shell server upon boot. It is not very useful on it's own, but could be combined with a jailbreak to make it untethered, or additional exploits (such as MacDirtyCow) to give it additional capabilities - such as full disk access.
+This is a heavily simplified version of the [FSUntether](https://github.com/Ingan121/FSUntether) project. It is an exploit for iOS 15.0 - 17.0DB1 that launches a basic shell server upon boot. It is not very useful on it's own, but could be combined with a jailbreak to make it untethered (although it runs late in the boot process), or additional exploits (such as MacDirtyCow) to give it additional capabilities - such as persistent file overwrites.
 
 ## Usage
 Run `make all` in the project directory to generate `TestFlightUntether.ipa`. Install this on your device using an enterprise certificate - it cannot be signed with a regular developer certificate. This is because it must retain the `com.apple.TestFlight` bundle identifier, but using a developer certificate will add your team ID at the end.
